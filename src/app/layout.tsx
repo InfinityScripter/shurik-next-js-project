@@ -3,6 +3,8 @@ import GlobalStyles from '@mui/material/GlobalStyles';
 import { Metadata } from 'next';
 import * as React from 'react';
 
+import NavBar from '@/components/NavBar';
+
 import { SITE_CONFIG } from '@/constants';
 import { GLOBAL_STYLES } from '@/styles';
 
@@ -51,9 +53,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang='en'>
+    <html lang='ru'>
       <GlobalStyles styles={GLOBAL_STYLES} />
       <body>
+        <NavBar />
         <Container sx={{ pl: 0, pr: 0 }}>{children}</Container>
       </body>
     </html>

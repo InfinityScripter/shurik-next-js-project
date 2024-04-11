@@ -30,7 +30,7 @@ const zodSchema = z.object({
 const StyledForm = styled.form`
   .MuiFormHelperText-root {
     text-align: center;
-    color: darkred;
+    color: #db2323;
     margin-bottom: 1rem;
   }
 `;

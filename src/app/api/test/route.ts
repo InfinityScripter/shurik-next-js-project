@@ -20,3 +20,17 @@ export const POST = async (req: Request) => {
     reqData,
   });
 };
+
+export async function PUT() {
+  return NextResponse.json({ message: 'Test putApiResponse PUT success!' });
+}
+
+export async function DELETE() {
+  return NextResponse.json({
+    message: 'Test deleteApiResponse DELETE success!',
+  });
+}
+
+export async function PATCH() {
+  return NextResponse.json({ message: 'Test patchApiResponse PATCH success!' });
+}
